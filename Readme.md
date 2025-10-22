@@ -226,6 +226,7 @@ Any Result can be converted to an Option:
 
 ```nim
 let converted = works().option  # equals @[1, 1, 2, 2, 2].some
+let errOption = fails().errorOption # option that is set when the Result holds an error
 ```
 
 [1]: https://nim-lang.org/docs/options.html
