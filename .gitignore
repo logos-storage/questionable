@@ -4,3 +4,6 @@
 nimbledeps
 nimble.develop
 nimble.paths
+nimbledeps
+.claude
+nimcache
