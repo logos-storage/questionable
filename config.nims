@@ -11,6 +11,6 @@ if (NimMajor, NimMinor) >= (1, 6):
   switch("warning", "DotLikeOps:off")
 
 # begin Nimble config (version 1)
-when fileExists("nimble.paths"):
+when fileExists(thisDir() & "/nimble.paths"):
   include "nimble.paths"
 # end Nimble config
