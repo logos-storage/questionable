@@ -12,15 +12,14 @@ Use the [Nimble][3] package manager to add `questionable` to an existing
 project. Add the following to its .nimble file:
 
 ```nim
-requires "questionable >= 0.10.15 & < 0.11.0"
+requires "questionable >= 0.11.0 & < 0.12.0"
 ```
 
-If you want to make use of Result types, then you also have to add either the
-[result][2] package, or the [stew][4] package:
+If you want to make use of Result types, then you also have to add the
+[results][2] package:
 
 ```nim
-requires "results" # either this
-requires "stew"   # or this
+requires "results"
 ```
 
 Options
@@ -230,6 +229,5 @@ let errOption = fails().errorOption # option that is set when the Result holds a
 ```
 
 [1]: https://nim-lang.org/docs/options.html
-[2]: https://github.com/arnetheduck/nim-result
+[2]: https://github.com/arnetheduck/nim-results
 [3]: https://github.com/nim-lang/nimble
-[4]: https://github.com/status-im/nim-stew

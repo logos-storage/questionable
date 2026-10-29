@@ -1,8 +1,3 @@
-template tryImport(module) = import module
-
-when compiles tryImport pkg/results:
-  import pkg/results
-else:
-  import pkg/stew/results
+import pkg/results
 
 export results
